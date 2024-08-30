@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "desenvolvimento django"
+version = "0.1.0"
+description = ""
+authors = ["Wellington Ferreira da Silva <wellingtonfs50@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "*"
+pytest-django = "*"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "mysite.settings"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
